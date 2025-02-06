@@ -1,8 +1,6 @@
 # .NET Katas Enhanced by Your Assistant :robot:
 
-[🇫🇷 Version française disponible ici](./README-fr.md)
-
-Welcome to the .NET Katas repository! This project includes several Katas to help you practice algorithmic skills in .NET. Each Kata is stored in a dedicated folder [`Exercice1`](./Exercice1/), [`Exercice2`](./Exercice2/), etc.
+Welcome to the .NET Katas repository! This project includes several Katas to help you practice algorithmic skills in .NET. Each Kata is stored in a dedicated branch: `exercise1`, `exercise2`, etc.
 Your task is to write the algorithm for a function that solves the tests present in the `.Tests` folders.
 
 Don't forget, your generative AI assistant is here to help you solve these challenges.
@@ -11,29 +9,36 @@ Don't forget, your generative AI assistant is here to help you solve these chall
 
 ### 🐾 Step-by-Step Guide
 
-1. **Clone the Repository:**  
+1. **Clone the Repository:**
 Clone this repository to your local machine:
 ```bash
 git clone <final-repository-url>
 cd <repository-name>
 ```
 
-2. **Install Dependencies:**  
+2. **Install Dependencies:**
 The exercises use `dotnet`. Run the following command to ensure the tool is installed:
 ```bash
 dotnet --version
 ```
 
-3. **Solve the Kata:**  
-Open the corresponding file (e.g., [`Exercice1.cs`](./Exercice1/Exercice1.cs) for the folder [`Exercice1`](./Exercice1/)) and implement the requested function based on the instructions outlined in the [`README`](./Exercice1/README.md) file.
+3. **Switch branches to a Kata 🚪:**
+   Each Kata is available on a dedicated branch. To get started, switch to the branch corresponding to the Kata you want to solve. For example:
 
-4. **Run the Tests:**  
+   ```bash
+   git checkout exercise1
+   ```
+
+4. **Solve the Kata:**
+Open the corresponding file (e.g., `Exercice1.cs` for the `exercise1` branch) and implement the requested function based on the instructions outlined in the README.md file on each branch.
+
+5. **Run the Tests:**
 Once you've written your solution, run the test suite to verify that your code works. The tests will guide you step by step. As you progress, more and more tests will pass. Use the following command to run the tests for the desired exercise. Here, for example, for Exercise 1:
 ```bash
-dotnet test ./Exercice1.Tests   
+dotnet test ./Exercice1.Tests
 ```
 
-5. **Debug and Refine:**  
+6. **Debug and Refine:**
 If the tests fail, examine the test output and adjust your code until all tests pass. Focus on one exercise at a time and work until all tests succeed.
 
 ### 👀 Overview of the Katas
