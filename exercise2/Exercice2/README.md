@@ -1,11 +1,12 @@
 ## 🔄 Exercice 2 ~ 10 minutes
 
-[🇬🇧 English version available here](./README-en.md)
+[🇫🇷 Version française disponible ici](./README-fr.md)
 
-Dans le fichier [`Exercice2.cs`](./Exercice2.cs), écrivez une méthode .NET `SumRange` qui calcule la somme des entiers entre une valeur minimale et une valeur maximale (min et max inclus) en utilisant la récursion :expressionless:\
+In the file [`Exercice2.cs`](./Exercice2.cs), write a .NET method `SumRange` that calculates the sum of integers between a minimum and maximum value (inclusive) using recursion.
 
-La méthode prend deux arguments entiers `min` et `max`. Si la valeur minimale est supérieure à la valeur maximale, elle doit renvoyer -1.
+The method should take two arguments: `min` and `max`. If `min` is greater than `max`, the method should return -1.
 
-Exemples :
-- `SumRange(1, 5)` doit retourner `15`, car 1 + 2 + 3 + 4 + 5 = 15.
-- `SumRange(5, 1)` doit retourner `-1` car $min > max$.
+Examples:
+- `SumRange(1, 5)` should return `15`, because 1 + 2 + 3 + 4 + 5 = 15.
+- `SumRange(5, 1)` should return `-1` since min is greater than max.
+
