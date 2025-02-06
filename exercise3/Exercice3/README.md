@@ -1,13 +1,13 @@
-## 🍕 Exercice3 ~ 10 minutes
+## 🍕 Exercise3 ~ 10 minutes
 
-[🇬🇧 English version available here](./README-en.md)
+[🇫🇷 Version française disponible ici](./README-fr.md)
 
-Implémentez une première méthode `SizeSplitter` qui prend deux paramètres : un tableau (array), et un entier (integer) (la taille).
-Nous supposerons que le tableau ne contient que des mots de type String, et que la règle arbitraire est de former deux groupes : le premier avec les mots de la taille donnée (deuxième paramètre de la méthode), et l'autre groupe avec tous les autres mots.
+Implement a method `SizeSplitter` that takes two parameters: an array and an integer (size).  
+We assume that the array contains only words of type String, and the arbitrary rule is to form two groups: the first with words of the given size (second parameter of the method), and the other group with all other words.
 
-La méthode `SizeSplitter` doit renvoyer un tableau de deux tableaux – les deux groupes définis ci-dessus – avec le contenu trié par ordre alphabétique.
+The `SizeSplitter` method must return an array of two arrays – the two groups defined above – with the contents sorted in alphabetical order.
 
-Exemple:
+Example:
 
 ```csharp
 SizeSplitter(["dog", "data", "ask", "my", "win", "two", "beer", "as"], 3); // [["ask", "dog", "two", "win"], ["as", "beer", "data", "my"]]
