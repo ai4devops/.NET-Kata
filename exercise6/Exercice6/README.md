@@ -1,39 +1,46 @@
-# 🙇 Exercice 6 ~ 10 minutes
+# Exercise 6 -  Person Formatter 👤 ~ 10 minutes
 
-[🇬🇧 English version available here](./README-en.md)
+[🇫🇷 Version française disponible ici](./README-fr.md)
 
-## 💪 Challenge
+Create two classes, `Person` and `Student`, to model basic relationships between individuals and their enrolled courses.
 
-Écrivez deux classes, `Person` et `Student`, pour modéliser les relations simples entre des personnes et leurs cours.
+## Challenge
 
-- La classe `Person` doit avoir deux attributs : `firstName` et `lastName`, et une méthode `GetFullName()` qui retourne le nom complet.
-- La classe `Student` doit hériter de `Person` et ajouter un nouvel attribut `course`. La classe doit aussi implémenter une méthode `GetDetails()` qui retourne une chaîne de caractères contenant le nom complet de l'étudiant et le cours auquel il est inscrit.
+1. **Person Class**:
+    - Attributes: `firstName` and `lastName`
+    - Method: `GetFullName` that returns the person's full name as `"FirstName LastName"`
 
-### Exemple
+2. **Student Class**:
+    - Inherits from `Person`
+    - Additional Attribute: `course`
+    - Method: `GetDetails` that returns a string in the format `"FirstName LastName is enrolled in CourseName"`
+
+## Example Usage
 
 ```csharp
 Student student = new Student("John", "Doe", "Math");
-student.GetFullName(); // Retourne "John Doe"
-student.GetDetails();  // Retourne "John Doe is enrolled in Math"
+student.GetFullName(); // Output: "John Doe"
+student.GetDetails();  // Output: "John Doe is enrolled in Math"
 ```
 
+## 📝 Guidelines
+1. Implement the Person class:
+
+   - Define the `GetFullName` method to return a string containing the full name.
+2. Implement the Student class:
+
+   - Ensure it inherits from Person.
+   - Define the `GetDetails` method to return the student's full name along with their course.
+   
+3. After implementing the classes, run tests to verify your code.
+   
 ### Input
-
-- Tout d'abord, implémentez la classe `Person`.
-- Ensuite, implémentez la classe `Student` qui hérite de `Person`.
-
+- First, implement the `Person` class.
+- Then, implement the `Student` class that inherits from Person. 
 ### Output
+- For `Person`, the method `GetFullName` should return a string with the full name.
+- For `Student`, the method `GetDetails` should return a string with the student's name and their course.
 
-- Pour `Person`, la méthode `GetFullName()` doit retourner une chaîne de caractères avec le nom complet.
-- Pour `Student`, la méthode `GetDetails()` doit retourner une chaîne de caractères avec le nom de l'étudiant et son cours.
-
-### Contraintes
-
-- Les prénoms et noms de famille seront toujours des chaînes non vides.
-- Le cours sera toujours une chaîne valide.
-
-```csharp
-Student student = new Student("Jane", "Smith", "Science");
-student.GetFullName(); // Retourne "Jane Smith"
-student.GetDetails();  // Retourne "Jane Smith is enrolled in Science"
-```
+### Constraints
+- First and last names will always be non-empty strings.
+- The course will always be a valid string.
