@@ -1,19 +1,19 @@
-# 📅 Exercice4 ~ 10 Minutes
+# Exercise 4 - Countdown Timer ⏳ ~ 10 Minutes
 
-[🇬🇧 English version available here](./README-en.md)
+[🇫🇷 Version française disponible ici](./README-fr.md)
 
-## Challenge
+Write a program that calculates the number of days remaining until a specified future date.
 
-Votre tâche est d'implémenter une fonction `DaysUntil` qui calcule combien de jours restent jusqu'à une date future donnée.
+Your program should accept a single input string representing a future date in the format `YYYY-MM-DD`.
 
-Vous recevrez une seule entrée, qui est une chaîne de caractères représentant une date future au format `AAAA-MM-JJ`.
+- If the date is in the future, return the number of days remaining.
+- If the date has already passed, return `0`.
 
-- Si la date est dans le futur, retournez le nombre de jours restants.
-- Si la date est déjà passée, votre fonction doit retourner `0`.
+You need to define the method `DaysUntil(String futureDate)`.
 
-### Exemple
+### Example
 
 ```csharp
-DaysUntil("2030-12-25"); // Retourne un nombre positif (en fonction de la date actuelle)
-DaysUntil("2023-01-01"); // Retourne 0 (date passée)
+DaysUntil("2030-12-25"); // Returns a positive number depending on the current date
+DaysUntil("2023-01-01"); // Returns 0 (past date)
 ```
